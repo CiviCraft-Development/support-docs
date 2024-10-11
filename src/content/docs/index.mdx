@@ -1,0 +1,36 @@
+---
+title: CiviCraft Support
+description: Support documentation for all of CiviCraft's pre-made products!
+template: splash
+hero:
+  tagline: Support documentation for all of our products!
+  image:
+    file: ../../assets/houston.webp
+  actions:
+    - text: Start Reading
+      link: /guides/example/
+      icon: right-arrow
+    - text: Join the Discord
+      link: https://starlight.astro.build
+      icon: discord
+      variant: secondary
+---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+## Browse by Category
+
+<CardGrid stagger>
+	<Card title="Models" icon="pencil">
+		Custom 3D models designed to bring immersive detail to your world.
+	</Card>
+	<Card title="Textures" icon="add-document">
+		Tailored GUIs, HUDs, icons, and more, for a cohesive and engaging visual experience.
+	</Card>
+	<Card title="Plugins" icon="setting">
+		Powerful plugins to extend the functionality of your server.
+	</Card>
+	<Card title="Server Setups" icon="open-book">
+		Pre-configured server setups to get your project running quickly and smoothly.
+	</Card>
+</CardGrid>
