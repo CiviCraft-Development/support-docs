@@ -21,16 +21,24 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 ## Browse by Category
 
 <CardGrid stagger>
-	<Card title="Models" icon="pencil">
-		Custom 3D models designed to bring immersive detail to your world.
-	</Card>
-	<Card title="Textures" icon="add-document">
-		Tailored GUIs, HUDs, icons, and more, for a cohesive and engaging visual experience.
-	</Card>
-	<Card title="Plugins" icon="setting">
-		Powerful plugins to extend the functionality of your server.
-	</Card>
-	<Card title="Server Setups" icon="open-book">
-		Pre-configured server setups to get your project running quickly and smoothly.
-	</Card>
+    <a href="/" style="text-decoration:none; color: inherit;">
+        <Card title="Models" icon="pencil">
+            Custom 3D models designed to bring immersive detail to your world.
+        </Card>
+	</a>
+	<a href="/" style="text-decoration:none; color: inherit;">
+        <Card title="Textures" icon="add-document">
+            Tailored GUIs, HUDs, icons, and more, for a cohesive and engaging visual experience.
+        </Card>
+	</a>
+	<a href='/plugins/info' style="text-decoration:none; color: inherit;">
+        <Card title="Plugins" icon="setting" href="/plugins/info">
+            Powerful plugins to extend the functionality of your server.
+        </Card>
+	</a>
+	<a href="/" style="text-decoration:none; color: inherit;">
+        <Card title="Server Setups" icon="open-book" style="color: inherit;">
+            Pre-configured server setups to get your project running quickly and smoothly.
+        </Card>
+	</a>
 </CardGrid>
